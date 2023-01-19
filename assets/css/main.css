@@ -319,7 +319,7 @@ section {
 
 .header .logo img {
   max-height: 105px;
-  margin: 10px 2px;
+  margin: 10px 0;
   padding: 10px;
 }
 
@@ -2129,7 +2129,7 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/navbar22.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/navbar33.jpeg") center center;
   /* background-image: url("../img/navbar22.jpg"); */
   /* background: var(--color-primary); */
   background-size: cover;
@@ -2151,13 +2151,16 @@ section {
   /* text-shadow: -6px -6px 0 white, 6px 6px 0 white; */
 }
 
-.hero .hero-text h4 {
-  text-align: center;
-  padding: 0 15em;
+.hero h4 {
   color: white;
-  font-weight: 500;
   margin-bottom: 30px;
-  /* text-shadow: -1px -1px 0 white, 1px 1px 0 white; */
+  
+}
+
+.hero .hero-text{
+  text-align: center;
+  /* padding: 0 15em; */
+  font-weight: 500;
 }
 
 /* .hero .btn-get-started {
@@ -2228,7 +2231,7 @@ section {
 
   .hero h4{
     font-size: 18px;
-    padding: 0;
+padding: 0 0;
   }
 
   .hero .btn-get-started,
