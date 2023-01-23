@@ -723,7 +723,42 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+            <form class="php-email-form" name="kontak-form">
+              <div class="alert alert-success alert-dismissible fade show d-none btn-alert" role="alert">
+                <strong>Terima Kasih!</strong> Pesan Anda Sudah Kami Terima.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="nama" class="form-control" id="name" placeholder="Nama Anda" required />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda" required />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="pesan" rows="3" placeholder="Pesan" required></textarea>
+              </div>
+              <div class="my-3"></div>
+              <div class="text-center">
+                <button class="btn-kirim" type="submit">Kirim Pesan</button>
+                <button class="d-none btn-loading" style=" background: var(--color-primary);border: 0;
+                padding: 14px 45px;
+                color: #fff;
+                transition: 0.4s;
+                border-radius: 50px;" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </form>
+
+            
+             
+          
+
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -744,7 +779,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </form> -->
           </div><!-- End Contact Form -->
 
         </div>
@@ -763,7 +798,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>Ladziidz Catering</span>
           </a>
-          <p>Ladziidz Catering menyajikan hidangan yang halal, lezat dan berkualitas. Memiliki paket menu beragam dan menu pondokan istimewa salah satunya @kambingguling.makassar</p>
+          <p>Ladziidz Catering menyajikan hidangan yang halal, lezat dan berkualitas. Memiliki paket menu beragam dan menu pondokan istimewa salah satunya <a style="color: white; font-weight: bold;" href="https://www.instagram.com/kambingguling.makassar/">@kambingguling.makassar</a></p>
           <div class="social-links d-flex mt-4">
             <a href="https://wa.me/6282396184781" class="twitter"><i class="bi bi-whatsapp"></i></a>
             <a href="https://www.facebook.com/ladziidzcatering" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -829,6 +864,7 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script src="forms/form.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
